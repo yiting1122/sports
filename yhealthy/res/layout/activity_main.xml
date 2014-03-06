@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tiledstripes" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#9C9C9C"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/weather_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textSize="10.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#9C9C9C"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动 "
+                android:textColor="#000"
+                android:textSize="13.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/gridView_officalSports"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="3" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:background="#9C9C9C"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的运动"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <GridView
+                android:id="@+id/gridView_personnalSports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:background="#9C9C9C"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <ListView
+                android:id="@+id/listview_others"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

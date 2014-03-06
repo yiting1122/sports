@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_background_color">#616e80</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    
+    
+    <!-- common -->
+    <color name="home_list_color">#666666</color>
+    	<color name="spikeare_text_gray">#b2b2b2</color>
+	<color name="spikeare_spik_color">#ec0092</color>
+	<color name="spikearedetail_productname_color">#3c7dd0</color>
+	<color name="spikeare_nodata_text_color">#f66900</color>
+	<color name="pink">#ec008c</color>
+	<color name="note_gray">#FFc3c3c3</color>
+	<color name="blue">#FF0066CC</color>
+	
+	<!-- login -->
+	<color name="background_color">#ebf0fa</color>
+	<color name="black">#FF000000</color>
+</resources>

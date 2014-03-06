@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/background_color">
+	<!-- 头部 -->
+	<include android:id="@+id/title" layout="@layout/title" />
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_below="@id/title" android:orientation="vertical">
+
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/register_name_box" android:layout_width="260dip"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:background="@drawable/input_box" android:layout_gravity="center_horizontal">
+			<TextView android:layout_width="70dip" android:text="账号"
+				android:textColor="@color/black" android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dip" />
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/register_name"
+				android:singleLine="true" android:hint="请输入6位以上用户名"
+				android:textSize="14sp" android:layout_gravity="center_vertical"
+				android:background="@null" />
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/register_password_box" android:layout_width="260dip"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:background="@drawable/input_box" android:layout_gravity="center_horizontal">
+			<TextView android:layout_width="70dip" android:text="密码"
+				android:textColor="@color/black" android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dip" />
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/register_password"
+				android:singleLine="true" android:hint="输入6位以上密码"
+				android:textSize="14sp" android:layout_gravity="center_vertical"
+				android:background="@null" android:inputType="textPassword" />
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/register_repassword_box" android:layout_width="260dip"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:background="@drawable/input_box" android:layout_gravity="center_horizontal">
+			<TextView android:layout_width="70dip"
+				android:text="确认密码"
+				android:textColor="@color/black" android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dip" />
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/register_repassword"
+				android:singleLine="true" android:hint="重复密码"
+				android:textSize="14sp" android:layout_gravity="center_vertical"
+				android:background="@null" android:inputType="textPassword" />
+		</LinearLayout>
+
+		<TextView android:id="@+id/register" android:layout_width="150dip"
+			android:layout_height="wrap_content" android:text="注册"
+			android:textColor="@color/white" android:textSize="20sp"
+			android:background="@drawable/btn_pink" android:layout_marginTop="30dip"
+			android:layout_gravity="center_horizontal" android:gravity="center" />
+	</LinearLayout>
+</RelativeLayout>
